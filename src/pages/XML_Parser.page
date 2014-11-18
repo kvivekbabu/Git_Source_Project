@@ -1,0 +1,15 @@
+<apex:page controller="Readxmlfile">
+<apex:form >
+ <apex:pageblock >
+ <apex:pageblockbuttons >
+   <apex:commandbutton value="Parse XML" action="{!getparsingdata}"></apex:commandbutton>
+ </apex:pageblockbuttons>
+    <apex:inputFile value="{!body}" filename="{!fileName}"/>
+    
+   
+ 
+ </apex:pageblock>
+ 
+</apex:form>
+
+</apex:page>

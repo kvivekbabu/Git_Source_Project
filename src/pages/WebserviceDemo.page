@@ -1,0 +1,21 @@
+<apex:page controller="WebserviceCalling">
+  <apex:form >
+     <apex:pageBlock >
+       <apex:pageBlockSection >        
+         <apex:inputText label="FahrenheitToCelsius" value="{!FC}" id="inpFC" />
+       <!-- <apex:inputText label="CelsiusToFahrenheit" value="{!CF}" id="inpCF"/> -->
+         
+         <apex:outputText label="FC Results" value="{!FCResult}"></apex:outputText>
+       <!--   <apex:outputText label="CF Results" value="{!CFResult}"></apex:outputText>-->
+       </apex:pageBlockSection>
+              
+       
+       <apex:pageBlockButtons >
+          <apex:commandButton value="Click Me for Results"  action="{!getFCResluts}" />
+          <apex:commandButton value="Click Me for Refresh" action="{!getClearAll}"/>          
+       </apex:pageBlockButtons>        
+     </apex:pageBlock>  
+  
+  
+  </apex:form>
+</apex:page>
